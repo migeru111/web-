@@ -32,8 +32,7 @@ DOM
                 要素の中に記述されているテキストをテキストノードという。
 
         chatGPT曰く
-            xmlで表現された文書に対して、domというAPIを用いることで、プログラミング言語によって文書を操作する。とのこと
-
+            xmlで表現された文書に対して、domというAPIを用いることで、プログラミング言語によって文書を操作する。**とのこと
 
     DOMについて
         udemy
@@ -45,3 +44,15 @@ DOM
             https://developer.mozilla.org/ja/docs/Web/API/Document_Object_Model/Introduction
 
 jquery
+    javascriptのライブラリ
+    html文書内の要素を操作する方法を提供する。
+        jQuery()は$()と書ける
+
+    DOMのドキュメントからDOM要素を選択するためにselectorが使用される
+        childSelector
+            $("parent > child")
+            上の記法で、parentの小要素のchildをクエリしてjQueryオブジェクトとして取得する。
+            https://api.jquery.com/child-selector/
+
+    参考
+        https://api.jquery.com/category/selectors/
