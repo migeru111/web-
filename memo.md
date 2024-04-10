@@ -59,5 +59,31 @@ jquery
             上の記法で、parentの小要素のchildをクエリしてjQueryオブジェクトとして取得する。
             https://api.jquery.com/child-selector/
 
+        attributeAssertSelector
+            $("[attribute='value']")
+            attributeの値がvalueのものをクエリする
+            https://api.jquery.com/attribute-equals-selector/
+
+        containSelector
+            jQuery( ":contains(text)" )
+            指定したテキストを含む全ての要素を取得する
+            https://api.jquery.com/contains-selector/
+
+        attributeContainPrefixSelector
+            jQuery( "[attribute|='value']" )
+            指定した属性をプリフィクスにもつ要素を取得する
+            https://api.jquery.com/attribute-contains-prefix-selector/
+
     参考
         https://api.jquery.com/category/selectors/
+
+cypress
+
+    assert
+        
+        assertには.should()が使える
+            https://docs.cypress.io/guides/references/assertions#Value
+        assertにはchaiを使っている。
+        chai-jqueryとかをラップしていて、chai-jqueryと、cypress上での指定方法が少し違う。使い方は元のドキュメント(chai-jquey)とかを見る
+            https://github.com/chaijs/chai-jquery
+            https://docs.cypress.io/guides/references/assertions#Chai-jQuery
